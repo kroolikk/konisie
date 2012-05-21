@@ -10,7 +10,15 @@ gem 'execjs'
 
 gem 'json'
 
-gem 'mysql2'
+group :development, :test do
+  gem 'mysql2'
+end
+group :production do
+  gem 'pg'
+  gem 'thin'
+end
+
+
 
 gem "rmagick"
 gem 'carrierwave'
@@ -44,3 +52,5 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'ruby-debug'
+
+gem "heroku"
