@@ -1,0 +1,2 @@
+module FrontStationHelper
+end

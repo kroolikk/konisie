@@ -1,0 +1,22 @@
+<div class="fields">
+  <%= f.label :photo, "Plik" %>:
+  <%= f.file_field :photo %>
+  <%= link_to_remove_fields "usuń", f %><br />
+  <% if f.object.image_file_name.present? %>
+    <br /><%= (image_tag f.object.image.url(:thumbnail)) %><br />
+  <% end %>
+  
+  
+
+
+
+  <p>
+    <%= f.label :content, "Question" %>
+    <%= link_to_remove_fields "remove", f %><br />
+    <%= f.text_area :content, :rows => 3 %>
+  </p>
+  <% f.fields_for :answers do |builder| %>
+    <%= render 'answer_fields', :f => builder %>
+  <% end %>
+  <p><%= link_to_add_fields "Add Answer", f, :answers %></p>
+</div>

@@ -1,0 +1,28 @@
+<h1>Listing galleries</h1>
+<%= link_to 'Nowa galeria', new_gallery_path %>
+<br/>
+<br/>
+<br/>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Zdjęcia</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @galleries.each do |gallery| %>
+  <tr>
+    <td><%= gallery.name %></td>
+    <td>
+      <% gallery.photos.each do |photo| %>
+	<%= image_tag photo.photo.thumb.url %>
+      <% end %>
+    </td>
+    <td><%= link_to 'Show', gallery %></td>
+    <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
+    <td><%= link_to 'Destroy', gallery, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>

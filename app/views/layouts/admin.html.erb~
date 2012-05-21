@@ -1,0 +1,65 @@
+4<!DOCTYPE html>
+<html>
+<head>
+  <title>KonisieDev1 - Panel administracyjny</title>
+  <%= stylesheet_link_tag "admin", :media => "all" %>
+  <link href='http://fonts.googleapis.com/css?family=Questrial|Istok+Web' rel='stylesheet' type='text/css'>
+  <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div class="main-wrapper">
+    <% if alert.present? %>
+      <p class="flash-error" id="error"><%= alert %></p>
+      <script type="text/javascript">
+	$(document).ready(function() {
+	  $("p.flash-error").delay(13000).fadeOut(10000);
+	});
+      </script>
+    <% end %>
+    <% if notice.present?  %>
+      <p class="flash-notice" id="notice"><%= notice %></p>
+      <script type="text/javascript">
+	$(document).ready(function() {
+	  $("p.flash-notice").delay(13000).fadeOut(10000);
+	});
+      </script>
+    <% end %>
+    
+
+
+    <header>Panel Administracyjny</header>
+    <% if session[:admin_loggedin] %>
+      <aside>
+	<nav class="breadcrumbs">Zalogowano jako: <strong><%= session[:account_type] %> | <%= link_to "wyloguj", admin_logout_url %></strong></nav>
+      </aside>
+      <nav class="breadcrumbs">
+	<span class="next-sep">&nbsp;</span>
+	<%= link_to "Strona Głowna", admin_url %>
+	<%= link_to "Ustawienia", "#" %>
+      </nav>
+      <aside class="main-nav">
+	<ul>
+    	  <li><%= link_to "Aktualności", infos_url %></li>
+	  <li><%= link_to "Galeria", '' %></li>
+	  <li><%= link_to "Cennik", '' %></li>
+	  <li><%= link_to "Atrakcje turystyczne", '' %></li>
+	  <li><%= link_to "Zaślepka", '' %></li>
+	  <li><%= link_to "Zaślepka", '' %></li>
+	  <% if false %>
+            <li><a href="#">Posts</a></li>
+            <li><a href="#">Comments</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Notifications <span class="notified" title="You have 23 unread notifications">23</span></a></li>
+	  <% end %>
+	</ul>
+      </aside>
+    <% end %>  
+
+    <%= yield %>
+    
+    <div class="clear"></div>
+        
+  </div>
+</body>
+</html>

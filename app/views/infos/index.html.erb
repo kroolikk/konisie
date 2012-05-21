@@ -1,0 +1,30 @@
+<div>
+  <h1>Aktualności</h1>
+  <%= link_to "Dodaj News'a", new_info_path %>
+  <br/>
+  <br/>
+  <br/>
+  
+  <table>
+    <tr>
+      <th>Id</th>
+      <th>Tytuł</th>
+      <th>Treść</th>
+      <th>Grafika</th>
+      <th>Dodany</th>
+    </tr>
+    
+    <% @infos.each do |info| %>
+      <tr>
+	<td><%= info.id %></td>
+	<td><%= info.title %></td>
+	<td><%= truncate( info.content, :length => 30 )%></td>
+	<td><%= image_tag( info.image.thumb.url )%></td>
+	<td><%= info.created_at %></td>
+	<td><%= link_to 'Show', info %></td>
+	<td><%= link_to 'Edit', edit_info_path(info) %></td>
+	<td><%= link_to 'Destroy', info, confirm: 'Are you sure?', method: :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>

@@ -1,0 +1,2 @@
+module FrontPensionHelper
+end

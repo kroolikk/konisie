@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <%= csrf_meta_tags %>
+  
+  <%= stylesheet_link_tag "style.css" %>
+  <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Parisienne" %>
+  <%= stylesheet_link_tag "nivo-slider.css" %>
+  <%= stylesheet_link_tag "colorbox.css" %>
+  
+  <%#= javascript_include_tag "jquery-1.7.2.min.js" %>
+  <%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" %>
+  <%= javascript_include_tag "jquery.nivo.slider.js" %>
+  <%= javascript_include_tag "jquery.colorbox.js" %>
+  
+
+  
+  <script>
+    $(document).ready(function(){
+      $(".group1").colorbox({rel:'group1'});
+    });
+  </script>
+  <title>A-prim</title>
+  <script type="text/javascript">
+    $(window).load(function() {
+      $('#slider').nivoSlider({
+        controlNav: false,
+        directionNav: false
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <!-- start header partial -->
+  <header>
+    <div>A-prim - logo</div>
+  </header>
+  <nav>
+    <%= link_to 'Strona Główna', root_path %>
+    <%= link_to 'Stajnia', stable_index_url %>
+    <%= link_to 'Pensjonat', pension_index_url %>
+    <%= link_to 'Stacja paliw', station_index_url %>
+    <%= link_to 'Kontakt', contact_url %>
+  </nav>
+  <div class="clearspace"></div>
+  <!-- end header partial -->
+
+  <div class="main-book-outer">
+    <div class="main-book">
+      
+      <div class="page1">
+	<div class="page2">
+	  <div class="main-page">
+	    <%= yield %>
+	  </div>
+	</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- start footer partial -->
+  <div class="clearspace"></div>
+  <footer>
+    A-prim © 2012
+    <span>
+      <a href="/">Strona Główna</a> |
+      <a href="/kontakt">Kontakt</a> |
+      <a href="/archiwum">Archiwum</a> |
+      Design: <a href="http://jalokimgraphics.pl">JalokimGraphics</a>
+    </span>
+  </footer>
+  <!-- end footer partial -->
+</body>
+</html>

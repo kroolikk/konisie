@@ -1,0 +1,4 @@
+class FrontStationController < ApplicationController
+  def index
+  end
+end
