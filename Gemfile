@@ -10,12 +10,14 @@ gem 'execjs'
 
 gem 'json'
 
-group :development, :test do
-  gem 'mysql2'
-end
+gem 'mysql2'
+gem 'pg'
+
+# group :development, :test do
+#   gem 'mysql2'
+# end
 group :production do
-  gem 'pg'
-  gem 'thin'
+   gem 'thin'
 end
 
 
@@ -53,4 +55,4 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
-gem "heroku"
+# gem "heroku"

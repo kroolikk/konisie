@@ -25,7 +25,8 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: konisie-dev1_production
   pool: 5
-  username: blog
-  password:
+  username: postgres
+  password: ananas
+  host: localhost
