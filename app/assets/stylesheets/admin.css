@@ -105,3 +105,24 @@ aside {	height: 100%;
 	padding: 20px 10px 30px 0px;
 	margin-left: 300px;
 }
+.page-content label {
+}
+
+.page-content input[type="text"] {
+	border: 1px solid #ccc;
+	padding: 6px 6px;
+	border-radius: 3px;
+	width: 300px;
+}
+.page-content input[type="password"] {
+	border: 1px solid #ccc;
+	padding: 6px 6px;
+	border-radius: 3px;
+	width: 300px;
+}
+
+.page-content input[type="submit"] {
+}
+.field {
+	margin-bottom: 15px;
+}

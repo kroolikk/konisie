@@ -1,15 +1,13 @@
-<h1>Listing galleries</h1>
-<%= link_to 'Nowa galeria', new_gallery_path %>
+<h1>Albumy zdjęć</h1>
+<%= link_to 'Dodaj nowy album', new_gallery_path %>
 <br/>
 <br/>
 <br/>
-<table>
+<table width="100%">
   <tr>
-    <th>Name</th>
-    <th>Zdjęcia</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th width="30%">Tytuł</th>
+    <th width="60%">Zdjęcia</th>
+    <th width="10%">Opcje</th>
   </tr>
 
 <% @galleries.each do |gallery| %>
@@ -20,9 +18,7 @@
 	<%= image_tag photo.photo.thumb.url %>
       <% end %>
     </td>
-    <td><%= link_to 'Show', gallery %></td>
-    <td><%= link_to 'Edit', edit_gallery_path(gallery) %></td>
-    <td><%= link_to 'Destroy', gallery, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Pokaż', gallery %> <%= link_to 'Edytuj', edit_gallery_path(gallery) %> <%= link_to 'Usuń', gallery, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
