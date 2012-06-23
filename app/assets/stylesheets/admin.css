@@ -59,7 +59,7 @@ aside .breadcrumbs {
 	border-color: #638400;
 	border-width: 1px 0px;
 	border-style: solid;
-	background: #9db500 url(img/nav-bg.png) repeat-x;
+	background: #9db500 url(/assets/nav-bg.png) repeat-x;
 	text-shadow: 1px 1px 0px #bece00;
 	color:#222;
 }
@@ -74,7 +74,7 @@ aside .breadcrumbs {
 	position:absolute;
 	width:8px;
 	height: 40px;
-	background:url(img/next-sep.png) no-repeat;
+	background:url(/assets/next-sep.png) no-repeat;
 }
 .notified {
 	border-radius: 15px;
