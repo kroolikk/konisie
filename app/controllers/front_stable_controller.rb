@@ -7,6 +7,7 @@ class FrontStableController < ApplicationController
   end
 
   def offer
+    @page = Page.find_by_label("offer_stable")
   end
 
   def gallery

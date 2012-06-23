@@ -56,3 +56,5 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 # gem "heroku"
+
+gem 'tinymce_fm'

@@ -1,6 +1,8 @@
 # -*- encoding: utf-8 -*-
 class PagesController < AdminController
 
+  include TinymceFm::Filemanager
+
 
   def index
     @pages = Page.all
