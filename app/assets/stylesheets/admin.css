@@ -90,3 +90,8 @@ aside .breadcrumbs {
 	background-image:     -ms-linear-gradient(top, #bacb00, #86a400);
 	background-image:      -o-linear-gradient(top, #bacb00, #86a400);
 }
+.admin-content {
+	padding: 0px 20px 30px 20px;
+	margin-left: 10px;
+	float: left;
+}
