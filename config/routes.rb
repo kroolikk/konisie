@@ -1,10 +1,6 @@
 KonisieDev1::Application.routes.draw do
 
   
-  resources :pages
-
-  resources :galleries
-
   get "stacja" => "front_station#index", :as => :station_index
   get "stacja-oferta" => "front_station#offer", :as => :station_offer
   get "stacja-galeria" => "front_station#gallery", :as => :station_gallery
@@ -33,6 +29,8 @@ KonisieDev1::Application.routes.draw do
   
 
   resources :infos
+  resources :pages
+  resources :galleries
 
   match "admin" => "admin#index", :as => :admin
   match "admin/login" => "admin#login", :as => :admin_login
