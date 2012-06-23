@@ -1,6 +1,8 @@
 KonisieDev1::Application.routes.draw do
 
   
+  resources :pages
+
   resources :galleries
 
   get "stacja" => "front_station#index", :as => :station_index
