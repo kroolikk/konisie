@@ -8,7 +8,7 @@ class FrontStationController < ApplicationController
   end
 
   def gallery
-    @galleries = Gallery.find_all_by_label("station")
+    @galleries = Gallery.where(:label => "station")
   end
 
   def gallery_show

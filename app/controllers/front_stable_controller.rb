@@ -16,7 +16,7 @@ class FrontStableController < ApplicationController
   end
 
   def gallery
-    @galleries = Gallery.find_all_by_label("stable")
+    @galleries = Gallery.where(:label => "stable")
   end
 
   def gallery_show
