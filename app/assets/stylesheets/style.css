@@ -165,10 +165,11 @@ table tr:nth-child(odd){
         font-weight: bold;
 }
 .map-overlay {
+	z-index: 99;
 	position: absolute;
-	top: 30px;
-	right: 0px;
-	padding: 5px;
+	top: 92px;
+	right: 275px;
+	padding: 10px;
 	background: white;
 	border-radius: 5px;
 	border: 1px solid #ccc;
