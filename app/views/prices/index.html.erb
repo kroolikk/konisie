@@ -1,6 +1,6 @@
 <h1>Cenniki</h1>
 
-<table>
+<table width="100%">
   <tr>
     <th>Miejsce</th>
     <th>Opis</th>
@@ -16,7 +16,7 @@
     <tr>
       <td></td>
       <td><%= p.description %></td>
-      <td><%= p.value %> zł</td>
+      <td><%= p.value %></td>
       <td><%= link_to 'Edytuj', edit_price_path(p) %></td>
       <td><%= link_to 'Usuń', p, confirm: 'Na pewno?', method: :delete %></td>
     </tr>
