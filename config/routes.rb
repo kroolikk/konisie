@@ -1,6 +1,8 @@
 KonisieDev1::Application.routes.draw do
 
   
+  resources :prices
+
   mount TinymceFm::Engine => "/tinymce_fm"
   
   
@@ -18,6 +20,7 @@ KonisieDev1::Application.routes.draw do
   get "stajnia-galeria/:id" => "front_stable#gallery_show", :as => :stable_gallery_show
   get "stajnia-cennik" => "front_stable#prices", :as => :stable_prices
   get "stajnia-archiwum" => "front_stable#archives", :as => :stable_archives
+  get "stajnia-archiwum/:id" => "front_stable#archives_show", :as => :stable_archives_show
 
 
   get "pensjonat" => "front_pension#index", :as => :pension_index

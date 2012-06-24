@@ -4,6 +4,6 @@ class Gallery < ActiveRecord::Base
 
   LABELS = [["Stajnia", "stable"],
             ["Pensionat", "pension"],
-            ["Station", "station"]]
+            ["Stacja", "station"]]
   
 end

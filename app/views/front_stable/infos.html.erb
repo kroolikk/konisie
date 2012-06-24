@@ -6,7 +6,7 @@
   <h2><%= link_to info.title, stable_infos_show_url(info) %></h2>
   <p><%= info.created_at.strftime("%d-%m-%Y %H:%M:%S") %></p>
   <div>
-    <%= image_tag(info.image.small.url) %><br>
+    <%= image_tag(info.image.small.url) if info.image.present? %><br>
     <%= raw info.content %>
   </div>  
   <div class="clearspace"></div>

@@ -24,8 +24,17 @@ class FrontStableController < ApplicationController
   end
 
   def prices
+    @prices = Price.find_all_by_label("stable")
   end
 
   def archives
+    infos = Info.order("created_at DESC")
+    @infos = infos[5..infos.size] || []
   end
+
+  def archives_show
+    @info = Info.find_by_id(params[:id])
+  end
+
+
 end

@@ -6,24 +6,14 @@
 
 <table width="100%">
   <tr>
-    <th width="60%">Rodzaj</th>
-    <th width="20%">2 osobowe</th>
-    <th width="20%">3 osobowe</th>
+    <th width="80%">Usługa</th>
+    <th width="20%">Cena</th>
   </tr>
-  <tr>
-    <td>Pokój nr1</td>
-    <td>200zł</td>
-    <td>300zł</td>
-  </tr>
-  <tr>
-    <td>Pokój nr2</td>
-    <td>400zł</td>
-    <td>500zł</td>
-  </tr>
-  <tr>
-    <td>Pokój nr3</td>
-    <td>600zł</td>
-    <td>700zł</td>
-  </tr>
+  <% @prices.each do |price| %>
+    <tr>
+      <td><%= price.description %></td>
+      <td><%= price.value %> zł</td>
+    </tr>
+  <% end %>
 </table>
 <div class="clearspace"></div>

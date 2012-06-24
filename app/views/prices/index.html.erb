@@ -1,0 +1,30 @@
+<h1>Cenniki</h1>
+
+<table>
+  <tr>
+    <th>Miejsce</th>
+    <th>Opis</th>
+    <th>Wartość</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @prices.each do |price| %>
+  <tr><td><%= price[0] %></td><td></td><td></td><td></td><td></td></tr>
+  <% price[1].each do |p| %>
+    <tr>
+      <td></td>
+      <td><%= p.description %></td>
+      <td><%= p.value %> zł</td>
+      <td><%= link_to 'Edytuj', edit_price_path(p) %></td>
+      <td><%= link_to 'Usuń', p, confirm: 'Na pewno?', method: :delete %></td>
+    </tr>
+  <% end %>
+  <tr rowspan="5"><td><br></td></tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Dodaj nowe ceny', new_price_path %>

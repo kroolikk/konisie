@@ -15,11 +15,13 @@
     
     <% @infos.each do |info| %>
       <tr>
-	<td><%= image_tag( info.image.thumb.url )%></td>
-	<td><%= info.title %><br>
-	<%= truncate( info.content, :length => 30 )%></td>
-	<td><%= info.created_at %></td>
-	<td><%= link_to 'Pokaż', info %> | <%= link_to 'Edytuj', edit_info_path(info) %> | <%= link_to 'Usuń', info, confirm: 'Are you sure?', method: :delete %></td>
+	<td><%= image_tag( info.image.thumb.url ) if info.image.present? %></td>
+	<td>
+	  <%= info.title %><br>
+	  <%= truncate( info.content, :length => 30 )%>
+	</td>
+	<td><%= info.created_at.strftime("%d-%m-%Y %H:%M:%S") %></td>
+	<td><%= link_to 'Edytuj', edit_info_path(info) %> | <%= link_to 'Usuń', info, confirm: 'Are you sure?', method: :delete %></td>
       </tr>
     <% end %>
   </table>

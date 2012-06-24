@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Label:</b>
+  <%= @price.label %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @price.description %>
+</p>
+
+<p>
+  <b>Value:</b>
+  <%= @price.value %>
+</p>
+
+
+<%= link_to 'Edit', edit_price_path(@price) %> |
+<%= link_to 'Back', prices_path %>

@@ -8,11 +8,11 @@
   <div class="description">Pensjonat</div>
   <ul>
     <li><%= link_to "O stajni", stable_index_url, :class => "#{ set_selected_class("front_stable", "index") }" %></li>
-    <li><%= link_to "Aktualności", stable_infos_url, :class => "#{ set_selected_class("front_stable", "infos") }" %></li>
+    <li><%= link_to "Aktualności", stable_infos_url, :class => "#{ set_selected_class("front_stable", ["infos", "infos_show"]) }" %></li>
     <li><%= link_to "Oferta", stable_offer_url, :class => "#{ set_selected_class("front_stable", "offer") }" %></li>
     <li><%= link_to "Galeria", stable_gallery_url, :class => "#{ set_selected_class("front_stable", ["gallery", "gallery_show"]) }" %></li>
     <li><%= link_to "Cennik", stable_prices_url, :class => "#{ set_selected_class("front_stable", "prices") }" %></li>
-    <li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", "archives") }" %></li>
+    <li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", ["archives", "archives_show"]) }" %></li>
     <li><%= link_to "Kontakt", contact_url %></li>
   </ul>
 </div>
