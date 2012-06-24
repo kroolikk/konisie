@@ -7,6 +7,10 @@ class FrontStableController < ApplicationController
     @infos = Info.order("created_at DESC").limit(5)
   end
 
+  def infos_show
+    @info = Info.find_by_id(params[:id])
+  end
+
   def offer
     @page = Page.find_by_label("offer_stable")
   end

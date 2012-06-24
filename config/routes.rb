@@ -12,6 +12,7 @@ KonisieDev1::Application.routes.draw do
 
   get "stajnia" => "front_stable#index", :as => :stable_index
   get "stajnia-aktualnosci" => "front_stable#infos", :as => :stable_infos
+  get "stajnia-aktualnosci/:id" => "front_stable#infos_show", :as => :stable_infos_show
   get "stajnia-oferta" => "front_stable#offer", :as => :stable_offer
   get "stajnia-galeria" => "front_stable#gallery", :as => :stable_gallery
   get "stajnia-cennik" => "front_stable#prices", :as => :stable_prices
