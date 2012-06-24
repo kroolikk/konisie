@@ -154,6 +154,7 @@ table tr:nth-child(odd){
 	background: #fff5e0;
 }
 .gmap {
+	position: relative;
 	margin: 10px 0px;
 	border: 1px solid #220d0d;
 	width:796px;
@@ -162,4 +163,14 @@ table tr:nth-child(odd){
 }
 .selected {
         font-weight: bold;
+}
+.map-overlay {
+	z-index: 99;
+	position: absolute;
+	top: 92px;
+	right: 275px;
+	padding: 10px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }
