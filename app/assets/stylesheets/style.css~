@@ -2,7 +2,7 @@ body {
 	font-size:11px;
 	padding: 0;
 	margin: 0;
-	background: #f3eddb url(images/bg.png);
+	background: #f3eddb url(/assets/bg.png);
 	font-family: Verdana, Geneva, sans-serif;
 }
 a {text-decoration: none;}
@@ -17,7 +17,7 @@ header {
 	color: #fff;
 	line-height: 100px;
 	height: 103px;
-	background: #4f1209 url(images/header.png) repeat-x;
+	background: #4f1209 url(/assets/header.png) repeat-x;
 }
 header div {
 	width: 875px;
@@ -45,7 +45,7 @@ nav {
 	border-color: #000;
 	border-style: solid;
 	border-width: 1px 0px;
-	background: #281010 url(images/nav-bar.png) repeat-x;
+	background: #281010 url(/assets/nav-bar.png) repeat-x;
 }
 nav a {
 	color: #f3eddb; 
@@ -60,7 +60,7 @@ nav a {
 	position: absolute;
 	width: 327px;
 	height: 86px;
-	background: url(images/nivo-cover.png) no-repeat;
+	background: url(/assets/nivo-cover.png) no-repeat;
 	z-index: 100;
 	bottom: 43px;
 	left: 1px;
@@ -79,7 +79,7 @@ nav a {
 }
 .main-book {
 	padding: 10px 16px;
-	background:url(images/book-bg.png);
+	background:url(/assets/book-bg.png);
 	width: 842px;
 	margin: 0 auto;
 	border: 1px solid #643d3e;
@@ -135,7 +135,7 @@ nav a {
 }
 .mini-nav li a:hover {color: #e8500b;}
 .mini-nav-shadow {
-	background: url(images/mini-nav-shadow.png) top center no-repeat;
+	background: url(/assets/mini-nav-shadow.png) top center no-repeat;
 	width: 785px;
 	height: 35px;
 }
@@ -159,4 +159,16 @@ table tr:nth-child(odd){
 	width:796px;
 	height: 306px;
 	display:block;
+}
+.selected {
+        font-weight: bold;
+}
+.map-overlay {
+	position: absolute;
+	top: 30px;
+	right: 0px;
+	padding: 5px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #ccc;
 }

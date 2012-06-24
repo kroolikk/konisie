@@ -11,7 +11,32 @@
   <%= javascript_include_tag "jquery-1.7.2.min.js" %>
   <%= javascript_include_tag "jquery.nivo.slider.js" %>
   <%= javascript_include_tag "jquery.colorbox.js" %>
-  
+  <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?sensor=false">
+    </script>
+    <script type="text/javascript">
+      function initialize() {
+      
+        var myOptions = {
+          center: new google.maps.LatLng(50.009601,19.214594),
+          zoom: 14,
+	  mapTypeControl: false,
+	  streetViewControl: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+      
+      var myLatlng = new google.maps.LatLng(50.01018,19.207814);
+      var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title:"Hello World!"
+ 			 });
+ 			 }
+    </script>
+<style>
+#map_canvas { height: 100% }
+</style>
 
   
   <script>
@@ -30,7 +55,7 @@
   </script>
 </head>
 
-<body>
+<body onload="initialize()">
   <!-- start header partial -->
   <header>
     <div>A-prim - logo</div>

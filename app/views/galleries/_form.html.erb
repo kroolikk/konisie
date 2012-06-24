@@ -12,18 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
+    <%= f.label :name, "Tytul" %>
     <%= f.text_field :name %>
   </div>
-  <br/>
-  <br/>
   
   <%= f.fields_for :photos do |builder| %>
     <%= render "photo_fields", :f => builder %>
   <% end %>  
   <p><%= link_to_add_fields "Dodaj zdjęcie", f, :photos %></p>
-  <br/>
-  <br/>
   
   <div class="actions">
     <%= f.submit %>
