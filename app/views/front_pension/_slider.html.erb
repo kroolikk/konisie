@@ -9,7 +9,7 @@
   <ul>
     <li><%= link_to "O pensjonacie", pension_index_url, :class => "#{ set_selected_class("front_pension", "index") }" %></li>
     <li><%= link_to "Pokoje", pension_rooms_url, :class => "#{ set_selected_class("front_pension", "rooms") }" %></li>
-    <li><%= link_to "Galeria", pension_gallery_url, :class => "#{ set_selected_class("front_pension", "gallery") }" %></li>
+    <li><%= link_to "Galeria", pension_gallery_url, :class => "#{ set_selected_class("front_pension", ["gallery", "gallery_show"]) }" %></li>
     <li><%= link_to "Atrakcje turystyczne", pension_attractions_url, :class => "#{ set_selected_class("front_pension", "attractions") }" %></li>
     <li><%= link_to "Cennik", pension_prices_url, :class => "#{ set_selected_class("front_pension", "prices") }" %></li>
     <li><%= link_to "Kontakt", contact_url %></li>

@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :label, "Miejsce" %><br />
-    <%= f.select :label, options_for_select(Price::LABELS) %>
+    <%= f.select :label, options_for_select(Price::LABELS, @price.label) %>
   </div>
   <div class="field">
     <%= f.label :description, "Opis" %><br />

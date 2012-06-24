@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :label, "Miejsce w serwisie" %><br />
-    <%= f.select :label, options_for_select(Page::PAGE_LABELS) %>
+    <%= f.select :label, options_for_select(Page::PAGE_LABELS, @page.label) %>
   </div>
   <div class="field">
     <%= f.label :content, "Treść" %><br />

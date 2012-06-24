@@ -1,10 +1,6 @@
 <%= render :partial => "slider" %>
 
 <h2>Pokoje</h2>
-
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dui tincidunt tellus vehicula vel gravida ligula elementum. Praesent molestie leo sed purus ultrices mattis. Nullam mollis, risus vitae dapibus rhoncus, velit risus pretium nunc, non fermentum ante diam vitae magna. Proin urna risus, mattis a gravida et, euismod at velit. Praesent interdum, urna nec feugiat porta, dui turpis commodo elit, non hendrerit felis magna vitae eros. Aliquam id felis vel mi porta posuere sed vel augue. Nullam leo tellus, elementum bibendum bibendum sed, vulputate hendrerit enim. Mauris nulla nisi, iaculis a scelerisque gravida, sodales lobortis nunc. Nam sodales bibendum neque eget fermentum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas eu lacus libero, a scelerisque risus. Sed vehicula leo in ante hendrerit ut fermentum diam condimentum. Nunc sed sapien lorem.</p>
+<%= raw @page.content if @page.present? %>
 
 <div class="clearspace"></div>
-
-<%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-<%= link_to( image_tag('demo5.png'), "assets/demo1.png", :class => "group1 cboxElement" ) %>
