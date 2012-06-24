@@ -1,11 +1,13 @@
 <%= render :partial => "slider" %>
-
-<h2>Czytaj newsa:</h2>
 <%= link_to "Powrót do aktualności >>", stable_infos_url %>
 
 <h2><%= @info.title %></h2>
 <p><%= @info.created_at.strftime("%d-%m-%Y %H:%M:%S") %></p>
-<div>
-  <%= image_tag(@info.image.small.url) if @info.image.present? %><br>
+
+  <div class="news-image">
+  <%= image_tag(@info.image.small.url) if @info.image.present? %>
+  </div>
+  <div class="akt-text">
   <%= raw @info.content %>
-</div>
+	</div>
+<div class="clearspace"></div>
