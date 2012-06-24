@@ -4,6 +4,7 @@ class FrontStableController < ApplicationController
   end
 
   def infos
+    @infos = Info.order("created_at DESC").limit(5)
   end
 
   def offer

@@ -160,3 +160,6 @@ table tr:nth-child(odd){
 	height: 306px;
 	display:block;
 }
+.selected {
+        font-weight: bold;
+}
