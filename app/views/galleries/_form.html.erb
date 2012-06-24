@@ -12,6 +12,11 @@
   <% end %>
 
   <div class="field">
+    <%= f.label :label, "Miejse w serwisie" %>
+    <%= f.select :label, options_for_select(Gallery::LABELS) %>
+  </div>
+
+  <div class="field">
     <%= f.label :name, "Tytul" %>
     <%= f.text_field :name %>
   </div>

@@ -4,13 +4,15 @@
 
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tristique dui tincidunt tellus vehicula vel gravida ligula elementum. Praesent molestie leo sed purus ultrices mattis. Nullam mollis, risus vitae dapibus rhoncus.</p>
 
-<span style="text-align:center;">  
-  <%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-  <%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-  <%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-  <%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-  <%= link_to( image_tag('demo4.png'), "assets/demo3.png", :class => "group1 cboxElement" ) %>
-</span>
+
+<div>
+  <% @galleries.each do |gallery| %>
+    <span style="text-align:center;">
+      <%= link_to( gallery.name, stable_gallery_show_url(gallery) ) %><br>
+      <%= link_to( image_tag(gallery.photos.last.photo.small.url), stable_gallery_show_url(gallery) ) %>
+    </span>
+  <% end %>
+</div>
 
 <p>magnis dis parturient montes, nascetur ridiculus mus. Maecenas eu lacus libero, a scelerisque risus. Sed vehicula leo in ante hendrerit ut fermentum diam condimentum. Nunc sed sapien lorem.</p>
 

@@ -16,6 +16,11 @@ class FrontStableController < ApplicationController
   end
 
   def gallery
+    @galleries = Gallery.find_all_by_label("stable")
+  end
+
+  def gallery_show
+    @gallery = Gallery.find_by_id(params[:id])
   end
 
   def prices

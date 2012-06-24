@@ -26,7 +26,7 @@ class GalleriesController < AdminController
     @gallery = Gallery.new(params[:gallery])
     
     if @gallery.save
-      redirect_to @gallery, notice: 'Galeria utworzona.'
+      redirect_to galleries_url, notice: 'Galeria utworzona.'
     else
       render action: "new"
     end
@@ -37,7 +37,7 @@ class GalleriesController < AdminController
     @gallery = Gallery.find(params[:id])
     
     if @gallery.update_attributes(params[:gallery])
-      redirect_to @gallery, notice: 'Galeria wyedytowana.'
+      redirect_to galleries_url, notice: 'Galeria wyedytowana.'
     else
       render action: "edit"
     end

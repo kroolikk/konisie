@@ -5,6 +5,7 @@
 <br/>
 <table width="100%">
   <tr>
+    <th width="30%">Miejsce</th>
     <th width="30%">Tytuł</th>
     <th width="60%">Zdjęcia</th>
     <th width="10%">Opcje</th>
@@ -12,13 +13,14 @@
 
 <% @galleries.each do |gallery| %>
   <tr>
+    <td><%= gallery.label %></td>
     <td><%= gallery.name %></td>
     <td>
       <% gallery.photos.each do |photo| %>
 	<%= image_tag photo.photo.thumb.url %>
       <% end %>
     </td>
-    <td><%= link_to 'Pokaż', gallery %> <%= link_to 'Edytuj', edit_gallery_path(gallery) %> <%= link_to 'Usuń', gallery, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Edytuj', edit_gallery_path(gallery) %> <%= link_to 'Usuń', gallery, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>

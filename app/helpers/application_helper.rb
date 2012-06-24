@@ -3,10 +3,18 @@ module ApplicationHelper
   def set_selected_class(controller, action=nil)
     
     if action.present?
-      if params[:controller] == controller && params[:action] == action
-        return 'selected'
+      if action.class == Array
+        if params[:controller] == controller && action.include?(params[:action])
+          return 'selected'
+        else
+          return ''
+        end
       else
-        return ''
+        if params[:controller] == controller && params[:action] == action
+          return 'selected'
+        else
+          return ''
+        end
       end
     else
       if params[:controller] == controller
