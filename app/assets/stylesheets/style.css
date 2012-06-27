@@ -53,7 +53,8 @@ nav {
 }
 nav a {
 	color: #f3eddb; 
-	margin: 0px 32px;
+	margin: 0px 16px;
+	padding: 0px 16px;
 	display: inline-block;
 }
 .clearspace {
@@ -142,7 +143,7 @@ nav a {
 .mini-nav-shadow {
 	background: url(/assets/mini-nav-shadow.png) top center no-repeat;
 	width: 785px;
-	height: 35px;
+	height: 23px;
 }
 table th{
 	color: #331617;
@@ -166,8 +167,11 @@ table tr:nth-child(odd){
 	height: 306px;
 	display:block;
 }
-.selected {
-        font-weight: bold;
+nav .selected {
+	background: url(/assets/selected-top.png) repeat-x;
+}
+.mini-nav .selected {
+  font-weight: bold;
 }
 .map-overlay {
 	z-index: 99;
@@ -214,20 +218,33 @@ table tr:nth-child(odd){
 	margin-top: 10px;
 }
 .news-sep {
-font-size: 10px;
-padding: 10px 15px 0 0;
-color: #8A8883;
-text-align: right;
-background: url(/assets/news-sep.png) center center no-repeat;
+	font-size: 10px;
+	padding: 10px 15px 0 0;
+	color: #8A8883;
+	text-align: right;
+	background: url(/assets/news-sep.png) center center no-repeat;
 }
 .junction {
 	text-align: center;
+
 }
 .triple {
-padding: 80px 0 10px 0;
-width: 242px;
-display: inline-block;
-margin: 0 10px;
+	padding: 80px 0 10px 0;
+	width: 240px;
+	display: inline-block;
+	margin: 0 10px 10px 10px;
+	border: 1px solid transparent;
+}
+.triple:hover {
+	background-color: #f9f2e3;
+	border-radius: 6px;
+	border: 1px solid #e8d8c0;
+}
+.triple-p {
+	width: 220px;
+	padding: 0 10px;
+	display: inline-block;
+	margin: 0 10px;
 }
 .gas { background:url(/assets/stacja.png) center top no-repeat;}
 .farm { background:url(/assets/stajnia.png) center top no-repeat;}

@@ -7,12 +7,19 @@
 <p>Serdecznie Zapraszamy do nowo otwartego Pensjonatu Agroturystycznego A-Prim, który położony
 jest na terenie pięknego Ośrodka Jeździeckiego w malowniczej miejscowości Grojec oddalonej o
 jedyne 5 km od miasta Oświęcim.</p>
-<div class="clearspace"></div>
+<div class="clearspace" style="height: 20px;"></div>
 <div class="junction">
-  <a href="/a-prim/stajnia.html" class="triple farm">Stadnina</a>
+	<%= link_to 'Stajnia', stable_index_url, :class => 'triple farm' %> 
   
-  <a href="/a-prim/pensjonat.html" class="triple home"> Pensjonat</a>
+  <%= link_to 'Pensjonat', pension_index_url, :class => 'triple home' %>
   
-  <a href="/a-prim/stacja" class="triple gas">Stacja</a>
+  <%= link_to 'Stacja paliw', station_index_url, :class => "triple gas" %>
+  
+  <p class="triple-p">Stajnia A-Prim w Grojcu jest nowym pensjonatem dla koni ,który powstał z myślą o ludziach
+ceniących sobie profesjonalnizm.</p>
+  <p class="triple-p">Pensjonat agroturystyczny położony
+jest na terenie pięknego Ośrodka Jeździeckiego w malowniczej miejscowości Grojec.</p>
+  <p class="triple-p">tekst o stacji</p>
+      
 </div>
 <div class="clearspace"></div>
