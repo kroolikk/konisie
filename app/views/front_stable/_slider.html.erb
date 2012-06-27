@@ -12,7 +12,7 @@
     <li><%= link_to "Oferta", stable_offer_url, :class => "#{ set_selected_class("front_stable", "offer") }" %></li>
     <li><%= link_to "Galeria", stable_gallery_url, :class => "#{ set_selected_class("front_stable", ["gallery", "gallery_show"]) }" %></li>
     <li><%= link_to "Cennik", stable_prices_url, :class => "#{ set_selected_class("front_stable", "prices") }" %></li>
-    <li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", ["archives", "archives_show"]) }" %></li>
+    <% if false %><li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", ["archives", "archives_show"]) }" %></li><% end %>
     <li><%= link_to "Kontakt", contact_url %></li>
   </ul>
 </div>
