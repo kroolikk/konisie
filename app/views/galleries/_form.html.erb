@@ -12,12 +12,12 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :label, "Miejse w serwisie" %>
+    <%= f.label :label, "Miejsce w serwisie" %>
     <%= f.select :label, options_for_select(Gallery::LABELS, @gallery.label) %>
   </div>
 
   <div class="field">
-    <%= f.label :name, "Tytul" %>
+    <%= f.label :name, "Tytuł" %>
     <%= f.text_field :name %>
   </div>
   
@@ -27,6 +27,6 @@
   <p><%= link_to_add_fields "Dodaj zdjęcie", f, :photos %></p>
   
   <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit 'Zapisz' %>
+  </div><br>
 <% end %>

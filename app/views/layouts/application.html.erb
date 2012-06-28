@@ -41,7 +41,12 @@
   
   <script>
     $(document).ready(function(){
-      $(".group1").colorbox({rel:'group1'});
+      $(".group1").colorbox({
+      	rel:'group1',
+      	maxWidth: '90%',
+      	maxHeight: '90%'
+      	
+      	});
     });
   </script>
   <title>A-prim</title>
@@ -60,7 +65,18 @@
 <body onload="initialize()">
   <!-- start header partial -->
   <header>
-    <div>A-prim - logo</div>
+    <div class="logo-area">
+    <% if params[:controller] == 'front_pension' %>
+    	<%= link_to image_tag('logo-pensjonat.png'), root_path %>
+    <% elsif params[:controller] == 'front_stable' %>
+    	<%= link_to image_tag('logo-stajnia.png'), root_path %>
+    <% elsif params[:controller] == 'front_station' %>
+    	<%= link_to image_tag('logo-stacja.png'), root_path %>
+    <% else %>
+    	<%= link_to image_tag('logo-pensjonat.png'), root_path %>
+    <% end %>
+    
+    </div>
   </header>
   <nav>    
     <%= link_to 'Strona Główna', root_path, :class => "#{ set_selected_class("home", "index") }" %>
@@ -90,10 +106,10 @@
   <footer>
     A-prim © 2012
     <span>
-      <a href="/">Strona Główna</a> |
+    	<%= link_to 'Strona Główna', root_path %> |
       <a href="/kontakt">Kontakt</a> |
       <a href="/archiwum">Archiwum</a> |
-      Design: <a href="http://jalokimgraphics.pl">JalokimGraphics</a>
+      <a href="http://jalokimgraphics.pl" target="_blank">JalokimGraphics</a>
     </span>
   </footer>
   <!-- end footer partial -->

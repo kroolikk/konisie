@@ -1,9 +1,9 @@
 body {
-	font-size:12px;
+	font-size:13px;
 	padding: 0;
 	margin: 0;
 	background: #f3eddb url(/assets/bg.png);
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: Tahoma, Geneva, sans-serif;
 }
 a {text-decoration: none;color: #e8500b;}
 a:hover {color: #c12900;}
@@ -107,7 +107,7 @@ nav a {
 
 }
 .main-page p {
-	font-size: 11px;
+	font-size: 12px;
 	color: #1b1b1b;
 	line-height: 17px;
 }
@@ -249,3 +249,45 @@ nav .selected {
 .gas { background:url(/assets/stacja.png) center top no-repeat;}
 .farm { background:url(/assets/stajnia.png) center top no-repeat;}
 .home { background:url(/assets/domek.png) center top no-repeat;}
+.gallery-holder {
+	text-align: center;
+	margin: 0 auto;
+	width: 743px;
+}
+.gallery-display {
+	font-weight: bold;
+	text-align: center;
+	width: 150px;
+	height: 180px;
+	overflow: hidden;
+	float: left;
+	margin: 0 15px;
+}
+.gallery-display img {
+	border: 1px solid #b7b0a5;
+	padding: 1px;
+	max-width: 146px;
+	max-height: 150px;
+}
+.gallery-display img:hover{
+	border: 1px solid #e8500b;
+}
+
+.gallery-display-small {
+	font-weight: bold;
+	text-align: center;
+	width: 150px;
+	height: 120px;
+	overflow: hidden;
+	float: left;
+	margin: 0 15px;
+}
+.gallery-display-small img {
+	border: 1px solid #b7b0a5;
+	padding: 1px;
+	max-width: 146px;
+	max-height: 150px;
+}
+.gallery-display-small img:hover{
+	border: 1px solid #e8500b;
+}

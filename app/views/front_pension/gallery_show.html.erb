@@ -1,12 +1,19 @@
 <%= render :partial => "slider" %>
 
-<h2>Oglądaj galerię:</h2>
-<%= link_to "Powrót do listy galerii >>", pension_gallery_url %><br>
-<br>
-<br>
+<h2>Oglądaj galerię </h2>
 <%= @gallery.name %><br>
-<% @gallery.photos.each do |photo| %>
-  
-  <%= link_to( image_tag(photo.photo.small.url), photo.photo.url, :class => "group1 cboxElement" ) %>
-  
-<% end  %>
+<%= link_to "« Powrót do listy galerii", pension_gallery_url %><br>
+<div class="clearspace"></div>
+	<div class="gallery-holder">
+
+		<% @gallery.photos.each do |photo| %>
+			<div class="gallery-display-small">
+				<%= link_to( image_tag(photo.photo.small.url), photo.photo.url, :class => "group1 cboxElement" ) %>
+			</div>
+		<% end  %>
+	</div>
+
+
+
+
+<div class="clearspace"></div>

@@ -20,7 +20,7 @@
 	<%= image_tag photo.photo.thumb.url %>
       <% end %>
     </td>
-    <td><%= link_to 'Edytuj', edit_gallery_path(gallery) %> <%= link_to 'Usuń', gallery, confirm: 'Are you sure?', method: :delete %></td>
+    <td><%= link_to 'Edytuj', edit_gallery_path(gallery) %> <%= link_to 'Usuń', gallery, confirm: 'Czy na pewno chcesz usunąć galerię? ', method: :delete %></td>
   </tr>
 <% end %>
 </table>
