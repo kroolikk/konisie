@@ -94,7 +94,7 @@ nav a {
 }
 .main-page {
 	position: relative;
-	min-height: 180px;
+	min-height: 420px;
 	display:block;
 	background: #fffaf0;
 	border: 1px solid #a8a49e;
@@ -241,6 +241,8 @@ nav .selected {
 	border: 1px solid #e8d8c0;
 }
 .triple-p {
+	position: relative;
+	vertical-align: top;
 	width: 220px;
 	padding: 0 10px;
 	display: inline-block;
@@ -290,4 +292,34 @@ nav .selected {
 }
 .gallery-display-small img:hover{
 	border: 1px solid #e8500b;
+}
+.local {
+	left: -23px;
+	display: block;
+	position: absolute;
+	width: 27px;
+	height: 33px;
+	background: url(/assets/contact-sprite.png) 0px 0px no-repeat;
+}
+.telephone {
+	left: -26px;
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 33px;
+	background: url(/assets/contact-sprite.png) -30px 0px no-repeat;
+}
+.mailing {
+	left: -30px;
+	display: block;
+	position: absolute;
+	width: 35px;
+	height: 33px;
+	background: url(/assets/contact-sprite.png) -65px 0px no-repeat;
+}
+.contact-holder {
+	margin-left: 20px;
+}
+.contact-holder .triple-p {
+	width: 213px;
 }

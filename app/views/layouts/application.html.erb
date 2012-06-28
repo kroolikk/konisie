@@ -73,7 +73,7 @@
     <% elsif params[:controller] == 'front_station' %>
     	<%= link_to image_tag('logo-stacja.png'), root_path %>
     <% else %>
-    	<%= link_to image_tag('logo-pensjonat.png'), root_path %>
+    	<%= link_to image_tag('logo-stajnia.png'), root_path %>
     <% end %>
     
     </div>
@@ -81,7 +81,7 @@
   <nav>    
     <%= link_to 'Strona Główna', root_path, :class => "#{ set_selected_class("home", "index") }" %>
     <%= link_to 'Stajnia', stable_index_url, :class => "#{ set_selected_class("front_stable") }" %>
-    <%= link_to 'Pensjonat', pension_index_url, :class => "#{ set_selected_class("front_pension") }" %>
+    <%= link_to 'Noclegi', pension_index_url, :class => "#{ set_selected_class("front_pension") }" %>
     <%= link_to 'Stacja paliw', station_index_url, :class => "#{ set_selected_class("front_station") }" %>
     <%= link_to 'Kontakt', contact_url, :class => "#{ set_selected_class("home", "contact") }" %>
   </nav>
