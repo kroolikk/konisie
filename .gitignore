@@ -29,7 +29,7 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-public/uploads
+public/uploads*
 public/images
 .rvmrc
 
