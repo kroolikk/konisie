@@ -11,7 +11,7 @@
   </tr>
 
 <% @prices.each do |price| %>
-  <tr><td><%= price[0] %></td><td></td><td></td><td></td><td></td></tr>
+  <tr><td><%= main_label(price[0]) %></td><td></td><td></td><td></td><td></td></tr>
   <% price[1].each do |p| %>
     <tr>
       <td></td>

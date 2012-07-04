@@ -11,8 +11,8 @@
 
 <% @pages.each do |page| %>
   <tr>
-    <td><%= page.label %></td>
-    <td><%= truncate( page.content, :length => 50) %></td>
+    <td><%= pages_label(page.label) %></td>
+    <td><%= truncate( strip_tags(page.content), :length => 50) %></td>
     <td><%= link_to 'Edytuj', edit_page_path(page) %></td>
     <td><%= link_to 'Usuń', page, confirm: 'Napewno usunać?', method: :delete %></td>
   </tr>

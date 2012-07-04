@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :content, "Treść" %>
-    <%= f.text_area :content %>
+    <%= f.tinymce :content %>
   </div>
   <div class="field">
     <%= image_tag(@info.image.thumb.url) if @info.image.present? %><br />

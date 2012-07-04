@@ -13,7 +13,7 @@
 
 <% @galleries.each do |gallery| %>
   <tr>
-    <td><%= gallery.label %></td>
+    <td><%= main_label(gallery.label) %></td>
     <td><%= gallery.name %></td>
     <td>
       <% gallery.photos.each do |photo| %>
