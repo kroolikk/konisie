@@ -18,19 +18,20 @@
       function initialize() {
       
         var myOptions = {
-          center: new google.maps.LatLng(50.009601,19.214594),
+          center: new google.maps.LatLng(50.01018,19.207814),
           zoom: 14,
 	  mapTypeControl: false,
 	  streetViewControl: false,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
         var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-      
+      var image = '/assets/map-pointer.png';
       var myLatlng = new google.maps.LatLng(50.01018,19.207814);
       var marker = new google.maps.Marker({
       position: myLatlng,
       map: map,
-      title:"Hello World!"
+      title:"A-prim",
+      icon: image 
  			 });
  			 }
     </script>
@@ -73,7 +74,7 @@
     <% elsif params[:controller] == 'front_station' %>
     	<%= link_to image_tag('logo-stacja.png'), root_path %>
     <% else %>
-    	<%= link_to image_tag('logo-stajnia.png'), root_path %>
+    	<%= link_to image_tag('logo.png'), root_path %>
     <% end %>
     
     </div>
