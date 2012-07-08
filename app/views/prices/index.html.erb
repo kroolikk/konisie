@@ -5,6 +5,7 @@
     <th>Miejsce</th>
     <th>Opis</th>
     <th>Wartość</th>
+    <th>Priorytet</th>    
     <th></th>
     <th></th>
     <th></th>
@@ -12,11 +13,15 @@
 
 <% @prices.each do |price| %>
   <tr><td><%= main_label(price[0]) %></td><td></td><td></td><td></td><td></td></tr>
-  <% price[1].each do |p| %>
+  <% price[1].each_with_index do |p, index| %>
     <tr>
       <td></td>
       <td><%= p.description %></td>
       <td><%= p.value %></td>
+      <td>
+	<%= ( link_to "+", pages_prior_up_url(p) ) if index > 0 %>
+	<%= ( link_to "-", pages_prior_down_url(p) ) if index < price[1].size - 1 %>
+      </td>
       <td><%= link_to 'Edytuj', edit_price_path(p) %></td>
       <td><%= link_to 'Usuń', p, confirm: 'Na pewno?', method: :delete %></td>
     </tr>

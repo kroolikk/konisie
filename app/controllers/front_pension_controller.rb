@@ -16,7 +16,8 @@ class FrontPensionController < ApplicationController
   end
 
   def prices
-    @prices = Price.find_all_by_label("pension")
+    # @prices = Price.find_all_by_label("pension")
+    @prices = Price.where("label = 'pension'").order("priority ASC")
   end
   
   def attractions

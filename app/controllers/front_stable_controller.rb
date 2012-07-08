@@ -15,6 +15,10 @@ class FrontStableController < ApplicationController
     @page = Page.find_by_label("offer_stable")
   end
 
+  def reservations
+    @page = Page.find_by_label("reservations_stable")
+  end
+  
   def gallery
     @galleries = Gallery.where(:label => "stable")
   end
@@ -24,7 +28,8 @@ class FrontStableController < ApplicationController
   end
 
   def prices
-    @prices = Price.find_all_by_label("stable")
+    # @prices = Price.find_all_by_label("stable")
+    @prices = Price.where("label = 'stable'").order("priority ASC")
   end
 
   def archives

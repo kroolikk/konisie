@@ -4,6 +4,7 @@ module AdminHelper
     case label
     when "about_stable" then "Stajnia - O stajni"
     when "offer_stable" then "Stajnia - Oferta"
+    when "reservations_stable" then "Stajnia - Rezerwacje"
     when "about_pension" then "Pensjonat - O pensjonacie"
     when "rooms_pension" then "Pensjonat - Pokoje" 
     when "attractions_pension" then "Pensjonat - Atrakcje" 

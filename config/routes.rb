@@ -17,6 +17,7 @@ KonisieDev1::Application.routes.draw do
   get "stajnia-aktualnosci" => "front_stable#infos", :as => :stable_infos
   get "stajnia-aktualnosci/:id" => "front_stable#infos_show", :as => :stable_infos_show
   get "stajnia-oferta" => "front_stable#offer", :as => :stable_offer
+  get "stajnia-rezerwacje" => "front_stable#reservations", :as => :stable_reservations
   get "stajnia-galeria" => "front_stable#gallery", :as => :stable_gallery
   get "stajnia-galeria/:id" => "front_stable#gallery_show", :as => :stable_gallery_show
   get "stajnia-cennik" => "front_stable#prices", :as => :stable_prices
@@ -37,9 +38,12 @@ KonisieDev1::Application.routes.draw do
 
   get "home/index"
   
-
   resources :infos
+
   resources :pages
+  match "strony-zwieksz-priorytet/:id" => "prices#prior_up", :as => :pages_prior_up
+  match "strony-zmniejsz-priorytet/:id" => "prices#prior_down", :as => :pages_prior_down
+
   resources :galleries
 
   match "admin" => "admin#index", :as => :admin

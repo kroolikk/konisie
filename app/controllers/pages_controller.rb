@@ -4,6 +4,7 @@ class PagesController < AdminController
   include TinymceFm::Filemanager
 
 
+
   def index
     @pages = Page.all
   end
