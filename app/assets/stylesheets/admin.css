@@ -135,3 +135,17 @@ aside {	height: 100%;
 .field {
 	margin-bottom: 15px;
 }
+.going-up {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+	background: url(/assets/up.png) no-repeat;
+}
+
+.going-down {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: url(/assets/down.png) no-repeat;
+}

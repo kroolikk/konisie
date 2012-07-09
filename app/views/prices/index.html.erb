@@ -19,8 +19,8 @@
       <td><%= p.description %></td>
       <td><%= p.value %></td>
       <td>
-	<%= ( link_to "+", pages_prior_up_url(p) ) if index > 0 %>
-	<%= ( link_to "-", pages_prior_down_url(p) ) if index < price[1].size - 1 %>
+	<%= ( link_to "", pages_prior_up_url(p), :class => "going-up", :title => "W górę" ) if index > 0 %>
+	<%= ( link_to "", pages_prior_down_url(p), :class => "going-down", :title => "W dół" ) if index < price[1].size - 1 %>
       </td>
       <td><%= link_to 'Edytuj', edit_price_path(p) %></td>
       <td><%= link_to 'Usuń', p, confirm: 'Na pewno?', method: :delete %></td>
