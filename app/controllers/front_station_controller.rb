@@ -16,7 +16,6 @@ class FrontStationController < ApplicationController
   end
 
   def prices
-    # @prices = Price.find_all_by_label("station")
     @prices = Price.where("label = 'station'").order("priority ASC")
   end
 end

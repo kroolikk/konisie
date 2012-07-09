@@ -28,7 +28,6 @@ class FrontStableController < ApplicationController
   end
 
   def prices
-    # @prices = Price.find_all_by_label("stable")
     @prices = Price.where("label = 'stable'").order("priority ASC")
   end
 

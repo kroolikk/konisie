@@ -6,6 +6,7 @@ module AdminHelper
     when "offer_stable" then "Stajnia - Oferta"
     when "reservations_stable" then "Stajnia - Rezerwacje"
     when "about_pension" then "Pensjonat - O pensjonacie"
+    when "reservations_pension" then "Pensjonat - Rezerwacje"
     when "rooms_pension" then "Pensjonat - Pokoje" 
     when "attractions_pension" then "Pensjonat - Atrakcje" 
     when "about_station" then "Stacja - O stacji"

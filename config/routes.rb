@@ -26,6 +26,7 @@ KonisieDev1::Application.routes.draw do
 
 
   get "pensjonat" => "front_pension#index", :as => :pension_index
+  get "pensjonat-rezerwacje" => "front_pension#reservations", :as => :pension_reservations
   get "pensjonat-pokoje" => "front_pension#rooms", :as => :pension_rooms
   get "pensjonat-galeria" => "front_pension#gallery", :as => :pension_gallery
   get "pensjonat-galeria/:id" => "front_pension#gallery_show", :as => :pension_gallery_show

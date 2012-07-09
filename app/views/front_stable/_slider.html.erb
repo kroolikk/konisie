@@ -1,20 +1,22 @@
 <div style="height: 306px;">
-	<div id="slider" class="nivoSlider">
-	  <%= image_tag 'stable/slide9.jpg' %>
-	  <%= image_tag 'stable/slide8.jpg' %>
-	  <%= image_tag 'stable/slide10.jpg' %>
-	</div>
+  <div id="slider" class="nivoSlider">
+    <%= image_tag 'stable/slide9.jpg' %>
+    <%= image_tag 'stable/slide8.jpg' %>
+    <%= image_tag 'stable/slide10.jpg' %>
+  </div>
 </div>
-	    
+
 <div class="mini-nav">
   <div class="description">Stajnia</div>
   <ul>
     <li><%= link_to "O stajni", stable_index_url, :class => "#{ set_selected_class("front_stable", "index") }" %></li>
     <li><%= link_to "Oferta", stable_offer_url, :class => "#{ set_selected_class("front_stable", "offer") }" %></li>
-    <li><%= link_to "Rezerwacje", stable_reservations_url, :class => "#{ set_selected_class("front_stable", "reservations") }" %></li>
     <li><%= link_to "Galeria", stable_gallery_url, :class => "#{ set_selected_class("front_stable", ["gallery", "gallery_show"]) }" %></li>
-    <% if false %><li><%= link_to "Cennik", stable_prices_url, :class => "#{ set_selected_class("front_stable", "prices") }" %></li>
-    <li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", ["archives", "archives_show"]) }" %></li><% end %>
+    <% if false %>
+      <li><%= link_to "Rezerwacje", stable_reservations_url, :class => "#{ set_selected_class("front_stable", "reservations") }" %></li>
+      <li><%= link_to "Cennik", stable_prices_url, :class => "#{ set_selected_class("front_stable", "prices") }" %></li>
+      <li><%= link_to "Archiwum", stable_archives_url, :class => "#{ set_selected_class("front_stable", ["archives", "archives_show"]) }" %></li>
+    <% end %>
     <li><%= link_to "Aktualności", stable_infos_url, :class => "#{ set_selected_class("front_stable", ["infos", "infos_show"]) }" %></li>
     <li><%= link_to "Kontakt", contact_url %></li>
   </ul>
