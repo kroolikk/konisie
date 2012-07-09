@@ -62,7 +62,7 @@ nav a {
 	clear: both;
 }
 .description {
-	position: absolute;
+/*	position: absolute;
 	width: 150px;
 	height: 61px;
 	background: url(/assets/large-ribbon.png) no-repeat;
@@ -73,6 +73,19 @@ nav a {
 	font-size: 16px;
 	padding: 0 0 0 16px;
 	color: white;
+	*/
+	position: absolute;
+	width: 327px;
+	height: 86px;
+	background: url(/assets/nivo-cover.png) no-repeat;
+	z-index: 100;
+	bottom: 43px;
+	left: 1px;
+	line-height: 100px;
+	font-size: 25px;
+	padding: 0 0 0 42px;
+	color: white;
+	text-shadow: 1px 1px 5px black;
 }
 .main-book-outer {
 	width: 876px;
