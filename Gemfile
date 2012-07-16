@@ -59,3 +59,5 @@ gem 'jquery-rails'
 # gem "heroku"
 
 gem 'tinymce_fm'
+
+gem 'globalize3'

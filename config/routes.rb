@@ -1,17 +1,15 @@
 KonisieDev1::Application.routes.draw do
 
   
-  resources :prices
+  match 'zmien-jezyk/:locale' => 'application#set_locale', :as => :set_language
 
   mount TinymceFm::Engine => "/tinymce_fm"
-  
-  
+    
   get "stacja" => "front_station#index", :as => :station_index
   get "stacja-oferta" => "front_station#offer", :as => :station_offer
   get "stacja-galeria" => "front_station#gallery", :as => :station_gallery
   get "stacja-galeria/:id" => "front_station#gallery_show", :as => :station_gallery_show
   get "stacja-cennik" => "front_station#prices", :as => :station_prices
-
 
   get "stajnia" => "front_stable#index", :as => :stable_index
   get "stajnia-aktualnosci" => "front_stable#infos", :as => :stable_infos
@@ -24,7 +22,6 @@ KonisieDev1::Application.routes.draw do
   get "stajnia-archiwum" => "front_stable#archives", :as => :stable_archives
   get "stajnia-archiwum/:id" => "front_stable#archives_show", :as => :stable_archives_show
 
-
   get "pensjonat" => "front_pension#index", :as => :pension_index
   get "pensjonat-rezerwacje" => "front_pension#reservations", :as => :pension_reservations
   get "pensjonat-pokoje" => "front_pension#rooms", :as => :pension_rooms
@@ -33,19 +30,17 @@ KonisieDev1::Application.routes.draw do
   get "pensjonat-cennik" => "front_pension#prices", :as => :pension_prices
   get "pensjonat-atrakcje-turystyczne" => "front_pension#attractions", :as => :pension_attractions
 
-
   get "kontakt" => "home#contact", :as => :contact
-
-
-  get "home/index"
   
+
   resources :infos
+  resources :prices  
+  resources :galleries
+
 
   resources :pages
   match "strony-zwieksz-priorytet/:id" => "prices#prior_up", :as => :pages_prior_up
   match "strony-zmniejsz-priorytet/:id" => "prices#prior_down", :as => :pages_prior_down
-
-  resources :galleries
 
   match "admin" => "admin#index", :as => :admin
   match "admin/login" => "admin#login", :as => :admin_login
@@ -53,7 +48,7 @@ KonisieDev1::Application.routes.draw do
   match "admin/logout" => "admin#logout", :as => :admin_logout
 
 
-
+  get "home/index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,5 +1,7 @@
 class Page < ActiveRecord::Base
 
+  translates :content
+
   PAGE_LABELS = [["Stajnia - O stajni", "about_stable"],
                  ["Stajnia - Oferta", "offer_stable"],
                 #["Stajnia - Rezerwacje", "reservations_stable"],
