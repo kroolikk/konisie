@@ -344,3 +344,7 @@ nav .selected {
 	width: 213px;
 }
 
+.lang_selected {
+    color: red;
+    font-size: 15px;
+}
