@@ -79,11 +79,11 @@
     </div>
   </header>
   <nav>    
-    <%= link_to 'Strona Główna', root_path, :class => "#{ set_selected_class("home", "index") }" %>
-    <%= link_to 'Stajnia', stable_index_url, :class => "#{ set_selected_class("front_stable") }" %>
-    <%= link_to 'Noclegi', pension_index_url, :class => "#{ set_selected_class("front_pension") }" %>
-    <%= link_to 'Stacja paliw', station_index_url, :class => "#{ set_selected_class("front_station") }" %>
-    <%= link_to 'Kontakt', contact_url, :class => "#{ set_selected_class("home", "contact") }" %>
+    <%= link_to t('home'), root_path, :class => "#{ set_selected_class("home", "index") }" %>
+    <%= link_to t('stable'), stable_index_url, :class => "#{ set_selected_class("front_stable") }" %>
+    <%= link_to t('pension'), pension_index_url, :class => "#{ set_selected_class("front_pension") }" %>
+    <%= link_to t('station'), station_index_url, :class => "#{ set_selected_class("front_station") }" %>
+    <%= link_to t('contact'), contact_url, :class => "#{ set_selected_class("home", "contact") }" %>
   </nav>
   <div class="clearspace"></div>
   <!-- end header partial -->
@@ -106,14 +106,13 @@
   <footer>
     A-prim © 2012 |
     <%= link_to 'pl', set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}" %> |
-    <%= link_to 'en', set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}" %> |
-    <%= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> |
-    <%= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %> |
-    <%= t('hello') %>
+    <%= link_to 'en', set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}" %> 
+    <%#= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> 
+    <%#= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %>
     <span>
-      <%= link_to 'Strona Główna', root_path %> |
-      <%= link_to "Kontakt", contact_url %> |
-      <%= link_to "Archiwum", stable_archives_url %> |
+      <%= link_to t('home'), root_path %> |
+      <%= link_to t('contact'), contact_url %> |
+      <%= link_to t('archives'), stable_archives_url %> |
       <a href="http://jalokimgraphics.pl" target="_blank">JalokimGraphics</a>
     </span>
   </footer>

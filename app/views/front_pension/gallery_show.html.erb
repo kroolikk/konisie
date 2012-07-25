@@ -1,8 +1,8 @@
 <%= render :partial => "slider" %>
 
-<h2>Oglądaj galerię </h2>
+<h2><%= t('view_gallery') %></h2>
 <%= @gallery.name %><br>
-<%= link_to "« Powrót do listy galerii", pension_gallery_url %><br>
+<%= link_to t('return_gallery'), pension_gallery_url %><br>
 <div class="clearspace"></div>
 	<div class="gallery-holder">
 

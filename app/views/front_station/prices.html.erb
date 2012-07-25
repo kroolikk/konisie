@@ -1,10 +1,10 @@
 <%= render :partial => "slider" %>
-<h2>Cennik </h2>
+<h2><%= t('acco.pricelist') %></h2>
 
 <table width="100%">
   <tr>
-    <th width="80%">Usługa</th>
-    <th width="20%">Cena</th>
+    <th width="80%"><%= t('acco.service') %></th>
+    <th width="20%"><%= t('acco.price') %></th>
   </tr>
   <% @prices.each do |price| %>
     <tr>

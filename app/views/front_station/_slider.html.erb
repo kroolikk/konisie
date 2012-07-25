@@ -7,13 +7,13 @@
 </div>
 	    
 <div class="mini-nav">
-  <div class="description">Stacja benzynowa</div>
+  <div class="description"><%= t('station') %></div>
   <ul>
-    <li><%= link_to "O stacji", station_index_url, :class => "#{ set_selected_class("front_station", "index") }" %></li>
-    <li><%= link_to "Oferta", station_offer_url, :class => "#{ set_selected_class("front_station", "offer") }" %></li>
-    <li><%= link_to "Galeria", station_gallery_url, :class => "#{ set_selected_class("front_station", ["gallery", "gallery_show"]) }" %></li>
-    <li><%= link_to "Cennik", station_prices_url, :class => "#{ set_selected_class("front_station", "prices") }" %></li>    
-    <li><%= link_to "Kontakt", contact_url %></li>
+    <li><%= link_to t('stat.about'), station_index_url, :class => "#{ set_selected_class("front_station", "index") }" %></li>
+    <li><%= link_to t('offer'), station_offer_url, :class => "#{ set_selected_class("front_station", "offer") }" %></li>
+    <li><%= link_to t('gallery'), station_gallery_url, :class => "#{ set_selected_class("front_station", ["gallery", "gallery_show"]) }" %></li>
+    <li><%= link_to t('acco.pricelist'), station_prices_url, :class => "#{ set_selected_class("front_station", "prices") }" %></li>    
+    <li><%= link_to t('contact'), contact_url %></li>
   </ul>
 </div>
 <div class="mini-nav-shadow"></div>

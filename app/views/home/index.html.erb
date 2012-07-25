@@ -4,18 +4,18 @@
   <%= image_tag 'gl3.jpg', :alt => "" %>
   <%= image_tag 'gl2.jpg' %>
 </div>
-<h2>Witamy w A-prim</h2>
+<h2><%= t('welcome_to') %> A-prim</h2>
 <p><strong>A-Prim Sp. z.o.o</strong> swą działalność na rynku paliwowym rozpoczęła w 2001 r.
  Jako partnerska stacja koncernu <strong>Slovnaft</strong> oferuje najwyższą jakość paliwa oraz konkurencyjne ceny.
  <br><br>
  Gospodarstwo Agroturystyczne <strong>A-Prim</strong> to nowoczesny ośrodek specjalizujący się w chowie i hodowli koni oraz turystyce.</p>
 <div class="clearspace" style="height: 20px;"></div>
 <div class="junction">
-	<%= link_to 'Stajnia', stable_index_url, :class => 'triple farm' %> 
+	<%= link_to t('stable'), stable_index_url, :class => 'triple farm' %> 
   
-  <%= link_to 'Noclegi', pension_index_url, :class => 'triple home' %>
+  <%= link_to t('pension'), pension_index_url, :class => 'triple home' %>
   
-  <%= link_to 'Stacja paliw', station_index_url, :class => "triple gas" %>
+  <%= link_to t('station'), station_index_url, :class => "triple gas" %>
   
   <p class="triple-p">Stajnia A-Prim w Grojcu jest nowym pensjonatem dla koni ,który powstał z myślą o ludziach
 ceniących sobie profesjonalnizm.</p>

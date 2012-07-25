@@ -1,2 +1,37 @@
 pl:
   hello: "Siemaneczko ziąąą!"
+  agro: "Pensjonat Agroturystyczny A-Prim"
+  home: "Strona Główna"
+  contact: "Kontakt"
+  archives: "Archiwum"
+  station: "Stacja Paliw"
+  pension: "Noclegi"
+  stable: "Stajnia"
+  gallery: "Galeria"
+  view_gallery: "Oglądaj galerię"
+  return_gallery: "« Powrót do galerii"
+  return_news: "« Powrót do aktualności"
+  welcome_to: "Witamy w"
+  offer: "Oferta"
+  read_more: "Czytaj więcej »"
+  reception: "Recepcja"
+  contact_text: "Gospodarstwo Agroturystyczne A-Prim położone jest w Dolinie Karpia oraz rzeki Soły na granicy województwa małopolskiego oraz śląskiego. W okolicy znajdują się malownicze tereny rekreacyjno - wypoczynkowe bogate w niespotykane gatunki roślin oraz zwierząt. Przestronna plaża nad rzeką Sołą , liczne ścieżki spacerowo-rowerowe, stawy czy historyczny pałacyk w Osieku to tylko nieliczna część atrakcji turystycznych jakie oferuje nam rejon gminy Grojec."
+  open: "czynna"
+  from: "od"
+  to: "do"
+  
+  stab:
+    about: "O stajni"
+    news: "Aktualności"
+  
+  acco:
+    about: "O pensjonacie"
+    rooms: "Pokoje"
+    attractions: "Atrakcje turystyczne"
+    price: "Cena"
+    pricelist: "Cennik"
+    service: "Usługa"
+    reservations: "Rezerwacje"
+  
+  stat:
+    about: "O stacji"

@@ -8,7 +8,7 @@
   </div>
   <div class="akt-text">
     <%= raw info.content.truncate(500) %><br>
-    <%= link_to 'Czytaj więcej »', stable_infos_show_url(info), :class => 'more-link' %>
+    <%= link_to t('read_more'), stable_infos_show_url(info), :class => 'more-link' %>
   </div>
   <div class="clearspace news-sep"></div>
 <% end %>
