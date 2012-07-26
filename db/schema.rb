@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120716211006) do
+ActiveRecord::Schema.define(:version => 20120726193725) do
 
   create_table "galleries", :force => true do |t|
     t.string   "name"
@@ -54,6 +54,18 @@ ActiveRecord::Schema.define(:version => 20120716211006) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+  create_table "price_translations", :force => true do |t|
+    t.integer  "price_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "value"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
+
+  add_index "price_translations", ["locale"], :name => "index_price_translations_on_locale"
+  add_index "price_translations", ["price_id"], :name => "index_price_translations_on_price_id"
 
   create_table "prices", :force => true do |t|
     t.string   "label"
