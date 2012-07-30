@@ -1,4 +1,6 @@
 class Price < ActiveRecord::Base
+
+  translates :description, :value
   
   LABELS = [["Stajnia", "stable"],
             ["Pensionat", "pension"],
