@@ -2,6 +2,9 @@
 # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
+  intro: "Started in 2001 with its petrol station, and as partner of"
+  intro_2: "offers the best in fuels, at the best price."
+  intro_3: "The Agrotourism Bed & Breakfast and a modern stable insure the best for horse riding enthusiasts and tourists."
   hello: "Hello world"
   agro: "Agrotourism B&B A-Prim"
   home: "Homepage"
@@ -22,6 +25,15 @@ en:
   open: "Open"
   from: "from"
   to: "to"
+  triple_stable: "The new A-prim stables for horses in Grojec was made for people who expect proffessionalism."
+  triple_pension: "Our agrotourism Bed & Breakfast is situated at the beautiful Grojec Riding Club."
+  triple_station: "As a partner of Slovnaft Poland we offer advanced petrol and diesel."
+  
+  price:
+    time: "Rooms are rented per day. An accomodation day lasts from 14:00 to 11:00"
+    star: "*Price per room."
+    bed: "There is a children's bed available."
+    park: "Parking for our guests is free of charge."
   
   stab:
     about: "About the stables"

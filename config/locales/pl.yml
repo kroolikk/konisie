@@ -1,4 +1,8 @@
 pl:
+  intro: "swą działalność na rynku paliwowym rozpoczęła w 2001 r.
+ Jako partnerska stacja koncernu"
+  intro_2: "oferuje najwyższą jakość paliwa oraz konkurencyjne ceny."
+  intro_3: "Gospodarstwo Agroturystyczne A-Prim to nowoczesny ośrodek specjalizujący się w chowie i hodowli koni oraz turystyce."
   hello: "Siemaneczko ziąąą!"
   agro: "Pensjonat Agroturystyczny A-Prim"
   home: "Strona Główna"
@@ -19,6 +23,18 @@ pl:
   open: "czynna"
   from: "od"
   to: "do"
+  triple_stable: "Stajnia A-Prim w Grojcu jest nowym pensjonatem dla koni ,który powstał z myślą o ludziach
+ceniących sobie profesjonalnizm."
+  triple_pension: "Pensjonat agroturystyczny położony
+jest na terenie pięknego Ośrodka Jeździeckiego w malowniczej miejscowości Grojec."
+  triple_station: "Jako partner Slovnaft Polska S.A. oferujemy zaawansowane technologicznie paliwa, benzyny oraz oleje napędowe."
+  
+  price:
+    time: "Pokoje wynajmowane są na doby. Doba noclegowa trwa od 14 00 do 11 00."
+    star: "*Podana cena jest ceną za pokój."
+    bed: "Istnieje możliwość bezpłatnego wypożyczenia łóżeczka dziecięcego."
+    park: "Nie pobieramy opłat za parking dla Naszych Gości."
+    
   
   stab:
     about: "O stajni"

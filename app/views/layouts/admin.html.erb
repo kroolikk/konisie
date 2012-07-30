@@ -32,7 +32,15 @@
       
       
       
-      <header>Panel Administracyjny</header>
+      <header style="padding: 30px;"><h1>Panel Administracyjny - <% if session[:locale] == 'pl' %>Polski<% else %>Angielski<% end %></h1><br>
+      <% if session[:locale] == 'pl' %>
+      Modyfikujesz teraz <strong>Polskie</strong> treści
+      <% else %>
+      Modyfikujesz teraz <strong>Angielskie</strong> treści
+      <% end %>
+      <br><br>
+      <%= link_to image_tag('pl.png'), set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}" %> |
+	  <%= link_to image_tag('gb.png'), set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}" %> </header>
       <% if session[:admin_loggedin] %>
 	
 	<nav class="breadcrumbs">
@@ -45,10 +53,9 @@
 	    <%= link_to "Strona Głowna", admin_url %>
 	    <%= link_to "Ustawienia", "#" %>
 	  <% end %>
-	  <%= link_to 'pl', set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}" %> |
-	  <%= link_to 'en', set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}" %> |
-	  <%= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> |
-	  <%= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %> |
+	  
+	  <% link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> 
+	  <% link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %> 
 	</nav>
 	<div class="admin-content">
 	  <aside class="main-nav">

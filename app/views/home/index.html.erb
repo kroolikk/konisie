@@ -5,10 +5,9 @@
   <%= image_tag 'gl2.jpg' %>
 </div>
 <h2><%= t('welcome_to') %> A-prim</h2>
-<p><strong>A-Prim Sp. z.o.o</strong> swą działalność na rynku paliwowym rozpoczęła w 2001 r.
- Jako partnerska stacja koncernu <strong>Slovnaft</strong> oferuje najwyższą jakość paliwa oraz konkurencyjne ceny.
+<p><strong>A-Prim Sp. z.o.o</strong> <%= t('intro') %> <strong>Slovnaft</strong> <%= t('intro_2') %> 
  <br><br>
- Gospodarstwo Agroturystyczne <strong>A-Prim</strong> to nowoczesny ośrodek specjalizujący się w chowie i hodowli koni oraz turystyce.</p>
+ <%= t('intro_3') %></p>
 <div class="clearspace" style="height: 20px;"></div>
 <div class="junction">
 	<%= link_to t('stable'), stable_index_url, :class => 'triple farm' %> 
@@ -17,11 +16,9 @@
   
   <%= link_to t('station'), station_index_url, :class => "triple gas" %>
   
-  <p class="triple-p">Stajnia A-Prim w Grojcu jest nowym pensjonatem dla koni ,który powstał z myślą o ludziach
-ceniących sobie profesjonalnizm.</p>
-  <p class="triple-p">Pensjonat agroturystyczny położony
-jest na terenie pięknego Ośrodka Jeździeckiego w malowniczej miejscowości Grojec.</p>
-  <p class="triple-p">Jako partner Slovnaft Polska S.A. oferujemy zaawansowane technologicznie paliwa, benzyny oraz oleje napędowe.</p>
+  <p class="triple-p"><%= t('triple_stable') %></p>
+  <p class="triple-p"><%= t('triple_pension') %></p>
+  <p class="triple-p"><%= t('triple_station') %></p>
 
 <div class="clearspace"></div>
 <a href="http://www.eholiday.pl/noclegi-rf4034.html" title="A-Prim Grojec" target="_blank"><img src="http://www.eholiday.pl/img/partner/l1a.gif" alt="A-Prim Grojec" border="0" width="52" height="26" /></a><a href="http://www.eholiday.pl/noclegi-grojec-11961.html" title="noclegi Grojec" target="_blank"><img src="http://www.eholiday.pl/img/partner/l1b.gif" alt="noclegi Grojec" border="0" width="22" height="26" /></a><a href="http://www.eholiday.pl" title="noclegi" target="_blank"><img src="http://www.eholiday.pl/img/partner/l1c.gif" alt="noclegi" border="0" width="22" height="26" /></a>      

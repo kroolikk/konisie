@@ -105,8 +105,8 @@
   <div class="clearspace"></div>
   <footer>
     A-prim © 2012 |
-    <%= link_to 'pl', set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}" %> |
-    <%= link_to 'en', set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}" %> 
+    <%= link_to image_tag('pl.png'), set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}", :title => "Polski" %> |
+    <%= link_to image_tag('gb.png'), set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}", :title => "English" %> 
     <%#= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> 
     <%#= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %>
     <span>
