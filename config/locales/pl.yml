@@ -35,7 +35,12 @@ jest na terenie pięknego Ośrodka Jeździeckiego w malowniczej miejscowości Gr
     bed: "Istnieje możliwość bezpłatnego wypożyczenia łóżeczka dziecięcego."
     park: "Nie pobieramy opłat za parking dla Naszych Gości."
     
-  
+  archive:
+    archive: "Archiwum"
+    read: "Czytaj archiwalnego newsa:"
+    return: "« Powrót do archiwum"
+    
+    
   stab:
     about: "O stajni"
     news: "Aktualności"

@@ -33,7 +33,12 @@ en:
     time: "Rooms are rented per day. An accomodation day lasts from 14:00 to 11:00"
     star: "*Price per room."
     bed: "There is a children's bed available."
-    park: "Parking for our guests is free of charge."
+    park: "Parking for our guests is free of charge." 
+       
+  archive:
+    archive: "Archive"
+    read: "Read archived news:"
+    return: "« Return"
   
   stab:
     about: "About the stables"

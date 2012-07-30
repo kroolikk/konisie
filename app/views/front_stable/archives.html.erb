@@ -1,6 +1,6 @@
 <%= render :partial => "slider" %>
 
-<h2>Archiwum</h2>
+<h2><%= t('archive.archive') %></h2>
 
 <% @infos.each do |info| %>
   <h2><%= link_to info.title, stable_archives_show_url(info) %></h2>

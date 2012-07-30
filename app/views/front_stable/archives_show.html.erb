@@ -1,7 +1,7 @@
 <%= render :partial => "slider" %>
 
-<h2>Czytaj archiwalnego newsa:</h2>
-<%= link_to "Powrót do archiwum >>", stable_archives_url %>
+<h2><%= t('archive.read') %></h2>
+<%= link_to t('archive.return'), stable_archives_url %>
 
 <h2><%= @info.title %></h2>
 <p><%= @info.created_at.strftime("%d-%m-%Y %H:%M:%S") %></p>
