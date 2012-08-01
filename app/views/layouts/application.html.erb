@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8" />
-  <%= csrf_meta_tags %>
   
+  <%= csrf_meta_tags %>
+  <meta name=”description” content=”Gospodarstwo Agroturystyczne A-Prim to nowoczesny ośrodek specjalizujący się w chowie i hodowli koni oraz turystyce.”>
+<meta name=”keywords” content=”A-prim turystyka noclegi stacja paliw stajnia stadnina grojec małopolska”>
+<meta name=”robots” content=”index,follow”>
   <%= stylesheet_link_tag "style.css" %>
   <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Parisienne&subset=latin,latin-ext" %>
   <%= stylesheet_link_tag "nivo-slider.css" %>
@@ -61,6 +64,21 @@
       });
     });
   </script>
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33823224-1']);
+  _gaq.push(['_setDomainName', 'a-prim.info']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 </head>
 
 <body onload="initialize()">
