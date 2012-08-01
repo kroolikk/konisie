@@ -343,8 +343,11 @@ nav .selected {
 .contact-holder .triple-p {
 	width: 213px;
 }
-
-.lang_selected {
-    color: red;
-    font-size: 15px;
+.logo-area {
+	position: relative;
+}
+.herb {
+	position: absolute;
+	right: 10px;
+	top: 10px;
 }
