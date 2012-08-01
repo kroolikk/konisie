@@ -344,6 +344,7 @@ nav .selected {
 	width: 213px;
 }
 .logo-area {
+	height: 100px;
 	position: relative;
 }
 .herb {
