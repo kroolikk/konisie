@@ -103,11 +103,18 @@
     <%= link_to t('pension'), pension_index_url, :class => "#{ set_selected_class("front_pension") }" %>
     <%= link_to t('station'), station_index_url, :class => "#{ set_selected_class("front_station") }" %>
     <%= link_to t('contact'), contact_url, :class => "#{ set_selected_class("home", "contact") }" %>
+    
   </nav>
   <div class="clearspace"></div>
   <!-- end header partial -->
 
   <div class="main-book-outer">
+  <div class="language-choice">
+    <%= link_to image_tag('pl.png'), set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}", :title => "Polski" %> |
+    <%= link_to image_tag('gb.png'), set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}", :title => "English" %> 
+    <%#= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> 
+    <%#= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %>
+    </div>
     <div class="main-book">
       
       <div class="page1">
@@ -123,11 +130,7 @@
   <!-- start footer partial -->
   <div class="clearspace"></div>
   <footer>
-    A-prim © 2012 |
-    <%= link_to image_tag('pl.png'), set_language_url(:locale => 'pl'), :class => "#{'lang_selected' if session[:locale] == 'pl'}", :title => "Polski" %> |
-    <%= link_to image_tag('gb.png'), set_language_url(:locale => 'en'), :class => "#{'lang_selected' if session[:locale] == 'en'}", :title => "English" %> 
-    <%#= link_to 'de', set_language_url(:locale => 'de'), :class => "#{'lang_selected' if session[:locale] == 'de'}" %> 
-    <%#= link_to 'ru', set_language_url(:locale => 'ru'), :class => "#{'lang_selected' if session[:locale] == 'ru'}" %>
+    A-prim © 2012 
     <span>
       <%= link_to t('home'), root_path %> |
       <%= link_to t('contact'), contact_url %> |
